@@ -1,0 +1,10 @@
+<app-rating (rated)="menejadorRated($event)"></app-rating>
+<div class="contenedor">
+    
+    <h1>Películas en cine</h1>
+    <app-listado-peliculas  [listado]="peliculasEnCines"></app-listado-peliculas>
+
+    <h1>Películas proximamente</h1>
+    <app-listado-peliculas  [listado]="peliculasProximamente"></app-listado-peliculas>
+    
+</div>

@@ -1,0 +1,20 @@
+<div *ngIf="!peliculas && peliculas?.length === 0">
+    <img src="http://pa1.narvii.com/6874/36e49a0c943025e78bb9faef3ebf715837f281edr1-320-211_00.gif" alt="">
+</div>
+ <!--Proyeccion de contenido son los que estan dentro del ng-container select="..."
+<span #noHayPeliculas>
+    <ng-content select="[noHayPeliculas]"></ng-content>
+</span>
+<div *ngIf="!noHayPeliculas.innerHTML.trim()">
+    <p >No hay peliculas en cartelera</p>
+</div>
+  -->
+  <!--
+<div *ngIf="peliculas && peliculas?.length > 0">
+    <ng-content select="[contenido]"></ng-content>
+</div>
+-->
+
+<ng-container *ngIf="listado && listado.length > 0">
+    <ng-content select="[contenido]"></ng-content>
+</ng-container>

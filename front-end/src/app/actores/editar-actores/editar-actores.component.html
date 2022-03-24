@@ -1,0 +1,6 @@
+<!--aca recibe formulario-actores un modelo de edición con todos los datos: foto,nombre,fecha-->
+<app-formulario-actores (submit)="guardarCambios($event)" *ngIf="modelo"
+[modelo]="modelo"
+></app-formulario-actores>
+
+<mat-spinner *ngIf="!modelo"></mat-spinner>
